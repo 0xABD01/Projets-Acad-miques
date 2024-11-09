@@ -22,6 +22,9 @@ liste AjouterAlaFin(liste Stations, int duree, char nom[])
 	l2->next = l1;
 	l1->prev = l2;
 	return Stations;
+
+
+	
 }
 
 void AfficheList(liste Stations)

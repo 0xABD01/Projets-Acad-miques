@@ -1,0 +1,44 @@
+Système
+
+Programme pour le format TXT
+
+Windows
+
+Bloc-Notes
+
+WordPad
+
+Microsoft Word
+
+Notepad++
+
+Mac
+
+TextEdit
+
+UltraEdit
+
+Br                         ackets
+ 
+Linux
+
+Gnom             e Text Editor
+
+No                    tepad++                       ndroid
+
+Google Docs
+
+Word Mobile
+
+
+A                            ndroid
+
+Google Docs
+
+Word Mobile
+
+iOS
+
+Word Mobile
+
+File Aid

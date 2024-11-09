@@ -1,0 +1,2 @@
+l'equation est : 1X²+2X+3 = 0
+la solution : dt = -8.000000 donc l'equation n'admet aucune solution dans IR

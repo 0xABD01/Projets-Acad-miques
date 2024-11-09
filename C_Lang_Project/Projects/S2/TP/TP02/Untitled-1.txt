@@ -1,0 +1,61 @@
+#include<stdio.h>
+#include<string.h>
+
+typedef struct station{
+	int num;
+	char nom[50];
+	int nbrBus;
+	struct station *suivant;
+}station,*liste;
+
+liste ajoutStation(liste l);
+liste suprmerDerStation(liste l);
+void afficherContenu()
+//
+liste ajoutStation(liste l,int num,char nom[],int nbrBus){
+	liste l1=maloc(sizeof(station));
+	l1->num=num;
+	l1->nbrBus =nbrBus;
+	strcpy(l1->nom,nom);
+	l1->suivant=NULL;
+	if(l=NULL)
+	   return l1;
+	l2=l;
+	while(l2->suivant!=NULL)
+	l2= l2->suivant;
+	l2->suivant=l1;
+	return l;
+}
+	liste suppfin(liste l){
+		liste l1,l2;
+		if(l==NULL)
+		return NULL;
+		if(l->suivant==NULL)
+		{
+			free(l)
+			return NULL;
+		}
+		ln=l;
+		while(l1->suivant->suivant!=NULL)
+	}
+	l1=l1->suivant;
+	l2=l1->suivant
+	    
+	
+}
+
+
+///4
+
+char nomStation(liste l){
+	char nom[50];
+	strcpy(nom,l->nom);
+	int max=l->nbrBus;
+	l=l->suivant;
+	
+	while(l!=NULL){
+		if(l->nbrBus>max){
+
+		}
+	}
+}

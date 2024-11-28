@@ -15,7 +15,7 @@ int main() {
     somme.afficher();
 
     Temps diff = t1 - t2;
-    cout << "Différence des deux temps : ";
+    cout << "Difference des deux temps : ";
     diff.afficher();
 
     cout << "Comparaison : ";

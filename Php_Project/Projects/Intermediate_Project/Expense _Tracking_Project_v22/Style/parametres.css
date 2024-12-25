@@ -1,0 +1,122 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Conteneur principal */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+table a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    color: #0056b3;
+}
+
+/* Formulaire d'ajout de budget */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="number"], form input[type="month"], form select {
+    width: 100%;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Message d'alerte */
+p.alert {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+/* Alertes de Dépenses Dépassées */
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+
+    
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    table, form {
+        width: 100%;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,73 @@
+/* Applique à tous les éléments de la page le modèle de boîte "border-box" 
+   pour inclure le padding et les bordures dans les calculs de largeur/hauteur */
+   * {
+    box-sizing: border-box;
+  }
+  
+  /* Styles pour les champs de saisie texte, les listes déroulantes et les zones de texte */
+  input[type=text], select, textarea {
+    width: 100%; /* Prend 100% de la largeur de leur conteneur parent */
+    padding: 12px; /* Ajoute un espace intérieur de 12 pixels */
+    border: 1px solid #ccc; /* Bordure grise de 1 pixel */
+    border-radius: 4px; /* Arrondit les coins avec un rayon de 4 pixels */
+    resize: vertical; /* Permet de redimensionner verticalement uniquement */
+  }
+  
+  /* Style pour les étiquettes des formulaires */
+  label {
+    padding: 12px 12px 12px 0; /* Ajoute un espace intérieur à gauche et à droite */
+    display: inline-block; /* Affiche les étiquettes en bloc inline */
+  }
+  
+  /* Style pour le bouton de soumission */
+  input[type=submit] {
+    background-color: #04AA6D; /* Couleur de fond verte */
+    color: white; /* Texte en blanc */
+    padding: 12px 20px; /* Ajoute des espaces intérieurs de 12px verticalement et 20px horizontalement */
+    border: none; /* Supprime les bordures */
+    border-radius: 4px; /* Arrondit les coins avec un rayon de 4 pixels */
+    cursor: pointer; /* Change le curseur en pointeur (main) au survol */
+    float: right; /* Aligne le bouton à droite */
+  }
+  
+  /* Style du bouton de soumission lors du survol */
+  input[type=submit]:hover {
+    background-color: #45a049; /* Change la couleur de fond lors du survol */
+  }
+  
+  /* Style pour le conteneur principal du formulaire */
+  .container {
+    border-radius: 5px; /* Arrondit légèrement les coins */
+    background-color: #f2f2f2; /* Couleur de fond gris clair */
+    padding: 20px; /* Ajoute un espace intérieur de 20 pixels */
+  }
+  
+  /* Colonne gauche du formulaire (25% de la largeur) */
+  .col-25 {
+    float: left; /* Aligne la colonne à gauche */
+    width: 25%; /* Largeur de 25% du conteneur parent */
+    margin-top: 6px; /* Marge supérieure de 6 pixels */
+  }
+  
+  /* Colonne droite du formulaire (75% de la largeur) */
+  .col-75 {
+    float: left; /* Aligne la colonne à gauche */
+    width: 75%; /* Largeur de 75% du conteneur parent */
+    margin-top: 6px; /* Marge supérieure de 6 pixels */
+  }
+  
+  /* Efface les flottants après les colonnes pour éviter des problèmes de mise en page */
+  .row::after {
+    content: ""; /* Insère un contenu vide */
+    display: table; /* Crée un nouveau contexte de formatage */
+    clear: both; /* Efface les flottants */
+  }
+  
+  /* Mise en page responsive : pour les écrans de moins de 600px de large */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%; /* Les colonnes prennent 100% de la largeur */
+      margin-top: 0; /* Supprime la marge supérieure */
+    }
+  }
+  
